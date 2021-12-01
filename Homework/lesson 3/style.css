@@ -6,3 +6,11 @@ body {
 
 
 }
+div{
+    background-color: #ffffff;
+    opacity: 60%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position: center center;
+
+}
