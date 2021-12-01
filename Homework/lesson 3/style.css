@@ -1,7 +1,9 @@
 body {
     background-image: url("fon1.jpg");
-    background-position: fixed;
+    /*background-position: fixed;*/
+    background-attachment:fixed;
     background-size: 100%;
+    background-size: cover;  
     background-repeat: no-repeat;
 
 
@@ -10,7 +12,15 @@ div{
     background-color: #ffffff;
     opacity: 60%;
     background-repeat: no-repeat;
-    background-position: fixed;
-    background-position: center center;
-
+    /*background-position: fixed;
+    background-position: center center;*/
+    font-family: 'Lobster', sans-serif;;
+    width: 500px;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
 }
