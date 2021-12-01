@@ -1,6 +1,8 @@
 body {
     background-image: url("fon1.jpg");
     background-position: fixed;
+    background-position: 100%;
     background-repeat: no-repeat;
-    
+
+
 }
