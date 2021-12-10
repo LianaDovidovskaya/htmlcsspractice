@@ -1,0 +1,90 @@
+
+#z {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+#a {
+    width: 100%;
+    height: 37px;
+    background-image: url("111.jpg");
+    position: absolute;
+    top: 0; left: 103px;right: 84px;
+    z-index: 2;
+    
+}
+
+#c {
+    height: 37px;
+    width: 100%;
+    background-image: url("111.jpg");
+    position: absolute;
+    bottom: -1px; left: 94px; right: 87;
+    z-index: 2;
+    
+    
+
+}
+
+#b {
+    width: 39px;
+    height:100%;
+    left: -1px; 
+    background-image: url("99.jpg");
+    overflow: hidden;
+    position: absolute;
+    left: -1px; top: 103px;
+    z-index: 2;
+    
+}
+#d {
+    width: 38px;
+    height: 100%;
+    background-image: url("99.jpg");
+    position: absolute;
+    right: 0;top: 100px; bottom: 37px;
+    z-index: 2;
+}
+#e {
+    width: 103px;
+    height: 103px;
+    background-image: url("33.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 3;
+}
+#f {
+    width: 97px;
+    height: 95px;
+    background-image: url("5.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+
+}
+#g {
+    width: 101px;
+    height: 95px;
+    background-image: url("7.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0; right: 0;
+    z-index: 3  ;
+
+}
+#h {
+    width: 101px;
+    height: 101px;
+    background-image: url("222.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 3  ;
+
+}
