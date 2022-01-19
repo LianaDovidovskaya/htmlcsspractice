@@ -79,11 +79,14 @@
     </style>
 </head>
 <body>
+    <!-- первый способ выполнен через ссылки, расположеные подряд,
+         разделение сделано при помощи стилевого селектора псевдоэлемента ::before и ::after. Метод неудобный из-за нечитабельности кода-->
     <div class="first">
             <a href="https://www.google.com/sky/" target="aaa">первая ссылка</a><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a>
     </div>
         <div class="clearfix"></div>
-
+    <!--второй способ выполнен через списки, расположеные в одну строку через float. 
+        Красные поля сделаны через левые рамки элементов списка. Удобный способ-->
     <div class="second"> 
         <ul>
             <li><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a></li>
@@ -94,6 +97,7 @@
         </ul>
     </div>
     <div class="clearfix"></div>
+    <!-- третий способ выполнен через таблицу , где закрашены левые грани ячейки таблицы. Удобный способ-->
     <div class="third">
         <table>
             <tr>
@@ -106,11 +110,12 @@
         </table>
     </div>
     <div class="clearfix"></div>
+    <!-- четвертый способ выполнен через картинки , вставленные после каждой ссылки-->
     <div class="four">
-        <span><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a><img src="border.png" alt="border"></span>
-        <span><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a><img src="border.png" alt="border"></span>
-        <span><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a><img src="border.png" alt="border"></span>
-        <span><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a><img src="border.png" alt="border"></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a><img src="border.png" alt=""></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a><img src="border.png" alt=""></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a><img src="border.png" alt=""></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a><img src="border.png" alt=""></span>
         <span><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a></span>   
     </div>
     
