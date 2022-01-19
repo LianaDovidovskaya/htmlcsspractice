@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        *{  margin: 0;
+            padding: 0;
+            }
+        .first {
+            margin: 25px;
+            }       
+        .second {
+            margin: 25px;
+                }       
+        .third {
+            margin: 15px 25px;
+                }  
+        .four {
+            margin-left: 25px;
+                }        
+        a {
+            color: green;
+            font-size: 20px;
+            }
+        .clearfix::after {
+                        content: '';
+                        display: block;
+                        clear: both;
+        }
+        a:hover {color: red;}
+
+        .first a::before {
+                        content:'';
+                        border-left: 3px solid red;
+                        padding: 10px 6px;
+}
+        .first a::after {
+                        content:'';
+                        padding: 10px 7px;
+        }
+        .first a:first-child::before {
+                        padding: 0px;
+                        border: none;
+        }
+        .second li {
+                        float: left;
+                        list-style-type: none;
+                        border-left: 3px solid red;
+                        padding: 10px 13px;  
+                    }
+        .second li:first-child {
+                        border: none;
+                        padding-left: 0px;
+        }
+        table {
+                        border-spacing: 0px;
+                        }
+        .third td {
+                        padding: 10px 13px;
+                        border-left: 3px solid red;
+                    }
+        .third td:first-child {
+                        padding-left: 0px;
+                        border: none;
+                    }
+        .four span a {
+                        vertical-align: 16px;
+   
+                    }
+        .four span img {
+                        padding-left: 11px;
+                        padding-right: 12px;
+                    }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+            <a href="https://www.google.com/sky/" target="aaa">первая ссылка</a><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a>
+    </div>
+        <div class="clearfix"></div>
+
+    <div class="second"> 
+        <ul>
+            <li><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a></li>
+            <li><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a></li>
+            <li><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a></li>
+            <li><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a></li>
+            <li><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a></li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="third">
+        <table>
+            <tr>
+                <td><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a></td>
+                <td><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a></td>
+                <td><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a></td>
+                <td><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a></td>
+                <td><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="clearfix"></div>
+    <div class="four">
+        <span><a href="https://www.google.com/sky/" target="aaa">первая ссылка</a><img src="border.png" alt="border"></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">вторая ссылка</a><img src="border.png" alt="border"></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">третья ссылка</a><img src="border.png" alt="border"></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">четвертая ссылка</a><img src="border.png" alt="border"></span>
+        <span><a href="https://www.google.com/sky/" target="aaa">пятая ссылка</a></span>   
+    </div>
+    
+</body>
+</html>
