@@ -1,0 +1,25 @@
+@import "style.css";
+
+@media all and (max-width: 445px) {
+        div.menu {
+                float: none;
+                width: auto;
+                
+        }
+        div.premenu {
+                background: none;
+        }
+       div.content {
+               margin-left: 0px;
+
+       }
+}
+@media (max-width: 565px) {
+        .content img {
+        float:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+       
+}
