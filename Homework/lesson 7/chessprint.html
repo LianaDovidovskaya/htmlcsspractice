@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHESS 2</title>
+    <title>CHESS print</title>
     <style>
-        .link a{
-                background: url(extref.png) no-repeat;
-                background-position-y: center; 
-                padding-left: 15px;
+       .link a::before {
+                content: url(extref.png);
+                padding-right: 5px;
+                }
+        @media print {
+        .link a[href]::before {
+            content: 'ссылка';
+            }
+        .link a[href]::after {
+            content: ' на 'attr(href)'';
+            }
+        .link a {
+            text-decoration: none;
+            }
         }
-        .link + p {
-                    clear: both; 
-        }
+
+    
+
     </style>
-        
+         
 </head>
 <body>
-    <a name="nachalo"></a>
+    <a name="start"></a>
     <table>
               <tr>
                 <p style="font-weight: bold; font-size: 24px">Михаил Ботвинник</p>
@@ -141,9 +151,10 @@
                   только тогда, когда претендент получил шансы на победу.
                 </p>
                 <p>
-                  <a href="#nachalo">в начало страницы</a>
+                  <a href="#start">в начало страницы</a>
                 </p>
               </tr>
     </table>
+    
 </body>
 </html>
