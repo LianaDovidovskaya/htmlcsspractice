@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Форма регистрации</title>
+</head>
+<body>
+    <div>
+        <h4>Для публикации вашей статьи заполните , пожалуйста, следующую форму:</h4>
+    </div>
+    <form method="post" action="http://fe.it-academy.by/TestForm.php">
+        <div class="line">
+            <div class="name">
+                <label>Название статьи</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name">
+            </div>
+        </div>
+        <div class="line">
+            <div class="name">
+                <label>Рубрика :</label>
+            </div>
+            <div class="input">
+                <select name="section">
+                    <option value="10">Психология</option>
+                    <option value="11">Наука</option>
+                    <option value="12" selected>Программирование</option>
+                    <option value="13" disabled>Техника</option>
+                </select>
+            </div>
+        </div>
+        <div class="line">
+            <div class="name">
+             <label>Публикация:</label>
+            </div>
+            <div class="inputradio">
+                <div>на сайте<input type="radio" name="site" value="1"></div>
+                <div>в журнале<input type="radio" name="magazin" value="2"></div>
+                <div>на сайте  в журнале<input type="radio" name="both"value="3" ></div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="name">
+                <label>Разрешить комментарии:</label> 
+            </div>
+            <div class="inputcheck">
+                <input type="checkbox" name="comment" checked>
+            </div>
+        </div>  
+        <div class="line">
+            <div class="name">
+                Текст статьи:
+            </div>
+            <div class="textarea">
+                <textarea name="text"></textarea>
+            </div>
+        </div>     
+            <input type="submit" value="Опубликовать">
+    </form>
+    
+</body>
+</html>

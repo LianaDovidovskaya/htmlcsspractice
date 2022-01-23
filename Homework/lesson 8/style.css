@@ -1,0 +1,45 @@
+div h4 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+ .line {
+    margin-top: 4px;
+    margin-bottom: 4px;
+ }
+ .line label {
+   float: left;
+   width: 190px;
+ }
+ .line .inputradio div {
+   display: inline;
+ }
+ .line .input input {
+   width: 100%;
+   box-sizing: border-box;
+ }
+ .line .input {
+   margin-left: 190px;
+ }
+ .line .textarea textarea {
+   width: 100%;
+   box-sizing: border-box;
+ }
+ @media all and (max-width: 610px) {
+   .line .inputradio div {
+      display: block;
+   }
+   .line label {
+      float: none;
+      width: 100%;
+   }
+   .line .input {
+      width: 100%;
+      margin-left: 0px;
+   }
+   .line .input select {
+      width: 100%;
+   }
+   .line div {
+      display: inline;
+   }
+ }
